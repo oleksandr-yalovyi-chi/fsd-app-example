@@ -1,0 +1,45 @@
+import { PATH } from "@/shared/config"
+
+import { IPermissions } from "./permissions.types"
+
+const PERMISSIONS: IPermissions = {
+  [PATH.withAuth.campaign.list]: true,
+  [PATH.withAuth.campaign.home.path]: true,
+  [PATH.withAuth.campaign.details.path]: true,
+  [PATH.withAuth.campaign.launch.path]: true,
+  [PATH.withAuth.campaign.moments.path]: true,
+  [PATH.withAuth.campaign.groups.path]: true,
+  [PATH.withAuth.campaign.group.path]: true,
+  [PATH.withAuth.campaign.members.list.path]: true,
+  [PATH.withAuth.campaign.donations.list.path]: true,
+  [PATH.withAuth.campaign.donationInvite.list.path]: true,
+  [PATH.withAuth.campaign.smsTemplates.list.path]: true,
+  [PATH.withAuth.campaign.emailTemplates.list.path]: true,
+  [PATH.withAuth.campaign.dripSchedules.path]: true,
+  [PATH.withAuth.campaign.donationsSettings.path]: true,
+  [PATH.withAuth.campaign.donationsSettings.topAmount.path]: true,
+  [PATH.withAuth.campaign.donationsSettings.donationAmounts.path]: true,
+  [PATH.withAuth.campaign.donationsSettings.fee.path]: true,
+  [PATH.withAuth.campaign.donationsSettings.paymentType.path]: true,
+  [PATH.withAuth.campaign.fund.list.path]: true,
+  [PATH.withAuth.campaign.messageLog.list.path]: true,
+  [PATH.withAuth.sports]: true,
+  [PATH.withAuth.userManagement.home]: true,
+  [PATH.withAuth.userManagement.create]: true,
+  [PATH.withAuth.userManagement.admin.update.path]: true,
+  [PATH.withAuth.userManagement.user.update.path]: true,
+  [PATH.withAuth.userManagement.ad.update.path]: true,
+  [PATH.withAuth.userManagement.admin.create]: true,
+  [PATH.withAuth.userManagement.user.create]: true,
+  [PATH.withAuth.userManagement.ad.create]: true,
+  [PATH.withAuth.userManagement.admin.list]: true,
+  [PATH.withAuth.userManagement.user.list]: true,
+  [PATH.withAuth.userManagement.ad.list]: true,
+  [PATH.withAuth.logs.home]: true,
+  [PATH.withAuth.logs.email.list]: true,
+  [PATH.withAuth.logs.sms.list]: true,
+  [PATH.withAuth.relationships]: true,
+  [PATH.withAuth.campaign.dashboard.path]: true,
+}
+
+export default PERMISSIONS
